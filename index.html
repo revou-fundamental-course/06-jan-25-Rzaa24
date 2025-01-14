@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="welcome">
+            <h1 id="welcomeMessage">Hi, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama.</p>
+            <div class="banner">1366x578</div>
+        </section>
+
+        <!-- Our Headquarters Section -->
+        <section id="headquarter" class="headquarter">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="location">
+                    <div class="circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="location">
+                    <div class="circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Message Us</h2>
+            <form id="messageForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Nama" required>
+
+                <label for="date">Tanggal Lahir:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Laki-Laki" required> Laki-Laki
+                <input type="radio" id="female" name="gender" value="Perempuan" required> Perempuan
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formOutput"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Muhammad Abimanyu Riza</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

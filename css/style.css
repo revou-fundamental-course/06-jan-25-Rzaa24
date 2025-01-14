@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-color: #ccc;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome .banner {
+    width: 100%;
+    max-width: 1366px;
+    height: 578px;
+    margin: 20px auto;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #aaa;
+}
+
+/* Headquarter Section */
+.headquarter {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.headquarter .locations {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.headquarter .location {
+    text-align: center;
+}
+
+.headquarter .circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact form .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+#formOutput {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headquarter .locations {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
